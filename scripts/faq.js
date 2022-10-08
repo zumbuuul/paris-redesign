@@ -1,1 +1,10 @@
-alert("test");
+const questions = document.querySelectorAll(".faq > article");
+const answers = document.querySelectorAll(".faq > article > .answer");
+
+questions.forEach((question, idx) => {
+  question.addEventListener("click", () => {
+    answers[idx].style.display == "block"
+      ? (answers[idx].style.display = "none")
+      : (answers[idx].style.display = "block");
+  });
+});
