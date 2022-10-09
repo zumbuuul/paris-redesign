@@ -9,16 +9,61 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
 
-  <body class="bg-backgroundColor min-h-[100vh]">
+  <body
+    class="bg-gradient-to-r from-black via-[#111111] to-[#242424] min-h-[100vh] min-w-full"
+  >
     <header>
-      <img src="images/logo.png" alt="" />
-      <nav>
-        <a class="text-red" href="">POCETNA</a>
+      <nav
+        class="text-white flex laptop:justify-end justify-center tablet:gap-x-5 gap-x-4 m-10"
+      >
+        <a class="" href="">POCETNA</a>
         <a href="">O NAMA</a>
         <a href="">MENI</a>
         <a href="">GALERIJA</a>
       </nav>
     </header>
+
+    <section
+      class="flex flex-col laptop:flex-row h-[100vh] items-top justify-center"
+    >
+      <div class="w-6/12 pl-[5vw] text-white">
+        <p>DOBRODOSLI</p>
+        <div class="pl-[5vw]">
+          <h1 class="text-5xl font-unna">Paris</h1>
+          <p>restoran</p>
+        </div>
+      </div>
+      <div class="w-full">
+        <img src="./images/plates.png" />
+      </div>
+    </section>
+
+    <section
+      class="flex-row laptop:flex justify-center items-center gap-5 text-white"
+    >
+      <div class="w-10/12 mx-auto">
+        <img src="./images/ulaz.png" alt="Ulaz" />
+      </div>
+      <div class="w-10/12 mx-auto">
+        <h1 class="text-center text-5xl mb-[10vh]">Title</h1>
+        <p class="w-10/12 mx-auto">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
+          enim accusantium porro quia soluta, aliquam placeat veritatis ullam
+          illum ut nisi ea temporibus ducimus deleniti sunt ex animi! Laboriosam
+          cumque veniam sed quos, nobis, eius maxime doloribus magnam, earum aut
+          rem dolores. Ipsum maiores sed amet cum esse, ullam quibusdam
+          consequatur nostrum, porro, provident quas sequi unde. Quia
+          distinctio, veniam doloremque necessitatibus officiis dicta pariatur
+          sit, explicabo, voluptates nulla quisquam unde fugiat aliquid
+          laudantium perferendis asperiores aperiam corporis nostrum iusto fugit
+          repellendus quaerat corrupti veritatis. Eaque molestias quasi est quia
+          modi qui quibusdam similique? Molestiae aspernatur reiciendis
+          laudantium alias rem?
+        </p>
+      </div>
+    </section>
+
+    <section></section>
 
     <section class="text-white w-4/12 min-w-[300px] mx-auto faq">
       <h3 class="text-2xl text-center py-5">Često postavljena pitanja</h3>
@@ -48,6 +93,7 @@
         <div class="answer hidden">odg</div>
       </article>
     </section>
+
     <script src="./scripts/menu.js" async defer></script>
     <script src="./scripts/faq.js" async defer></script>
   </body>
