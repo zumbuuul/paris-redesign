@@ -18,8 +18,8 @@ module.exports = {
         gradientEnd: "#383838",
       },
       fontFamily: {
-        unna: ["Unna", "serif"],
-        ununtu: ["Ubuntu", "sans-serif"],
+        gv: ["Great Vibes", "serif"],
+        ubuntu: ["Ubuntu", "sans-serif"],
       },
     },
   },
