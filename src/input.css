@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+@keyframes lol {
+  0% {
+    transform: translateY(500px);
+  }
+  100% {
+  }
+}
+
+.slowSlideup {
+  animation-name: lol;
+  animation-duration: 1s;
+}
+
+.slowerSlideup {
+  animation-name: lol;
+  animation-duration: 2.5s;
+}
+
+.slowestSlideup {
+  animation-name: lol;
+  animation-duration: 4s;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
