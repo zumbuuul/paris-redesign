@@ -931,6 +931,11 @@ video {
   color: rgb(169 146 125 / var(--tw-text-opacity));
 }
 
+.hover\:text-darkbrown:hover{
+  --tw-text-opacity: 1;
+  color: rgb(94 80 63 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px){
   .tablet\:gap-x-5{
     -moz-column-gap: 1.25rem;
