@@ -703,6 +703,18 @@ video {
   margin-bottom: 30vh;
 }
 
+.mb-\[150vh\]{
+  margin-bottom: 150vh;
+}
+
+.mb-\[170h\]{
+  margin-bottom: 170h;
+}
+
+.mb-\[170vh\]{
+  margin-bottom: 170vh;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -1031,6 +1043,10 @@ video {
 @media (min-width: 1024px){
   .laptop\:left-\[40\%\]{
     left: 40%;
+  }
+
+  .laptop\:mb-\[130vh\]{
+    margin-bottom: 130vh;
   }
 
   .laptop\:w-6\/12{
