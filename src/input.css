@@ -37,7 +37,7 @@
 
 .changeColorAnimation {
   --bg-size: 400%;
-  --color-one: #54eb75;
+  --color-one: #e3e84a;
   --color-two: #139e31;
 
   background: linear-gradient(
@@ -50,7 +50,7 @@
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  animation: move-bg 4s infinite linear;
+  animation: move-bg 6s infinite linear;
 }
 
 @tailwind base;

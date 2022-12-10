@@ -61,7 +61,7 @@
 
 .changeColorAnimation {
   --bg-size: 400%;
-  --color-one: #54eb75;
+  --color-one: #e3e84a;
   --color-two: #139e31;
   background: linear-gradient(
       90deg,
@@ -73,8 +73,8 @@
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-animation: move-bg 4s infinite linear;
-          animation: move-bg 4s infinite linear;
+  -webkit-animation: move-bg 6s infinite linear;
+          animation: move-bg 6s infinite linear;
 }
 
 /*
