@@ -8,6 +8,11 @@
   100% {
   }
 }
+@keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
+  }
+}
 
 .file {
   background: -webkit-linear-gradient(#6ee688, #2fc44f);
@@ -28,6 +33,24 @@
 .slowestSlideup {
   animation-name: lol;
   animation-duration: 4s;
+}
+
+.changeColorAnimation {
+  --bg-size: 400%;
+  --color-one: #54eb75;
+  --color-two: #139e31;
+
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: move-bg 4s infinite linear;
 }
 
 @tailwind base;
