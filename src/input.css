@@ -9,6 +9,12 @@
   }
 }
 
+.file {
+  background: -webkit-linear-gradient(#6ee688, #2fc44f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .slowSlideup {
   animation-name: lol;
   animation-duration: 1s;
