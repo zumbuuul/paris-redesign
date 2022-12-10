@@ -53,6 +53,24 @@
   animation: move-bg 6s infinite linear;
 }
 
+.changeColorAnimation2 {
+  --bg-size: 400%;
+  --color-one: #e3e84a;
+  --color-two: #139e31;
+
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: move-bg 4s infinite linear;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
