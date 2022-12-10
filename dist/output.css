@@ -769,6 +769,10 @@ video {
   width: 66.666667%;
 }
 
+.w-2\/12{
+  width: 16.666667%;
+}
+
 .min-w-\[300px\]{
   min-width: 300px;
 }
@@ -980,6 +984,11 @@ video {
 .text-lightbrown{
   --tw-text-opacity: 1;
   color: rgb(169 146 125 / var(--tw-text-opacity));
+}
+
+.text-\[\#b59818\]{
+  --tw-text-opacity: 1;
+  color: rgb(181 152 24 / var(--tw-text-opacity));
 }
 
 .opacity-50{
