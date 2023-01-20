@@ -2,27 +2,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
-@-webkit-keyframes lol {
-  0% {
-    transform: translateY(500px);
-  }
-
-  100% {
-  }
-}
-
 @keyframes lol {
   0% {
     transform: translateY(500px);
   }
 
   100% {
-  }
-}
-
-@-webkit-keyframes move-bg {
-  to {
-    background-position: var(--bg-size) 0;
   }
 }
 
@@ -39,24 +24,18 @@
 }
 
 .slowSlideup {
-  -webkit-animation-name: lol;
-          animation-name: lol;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: lol;
+  animation-duration: 1s;
 }
 
 .slowerSlideup {
-  -webkit-animation-name: lol;
-          animation-name: lol;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  animation-name: lol;
+  animation-duration: 2.5s;
 }
 
 .slowestSlideup {
-  -webkit-animation-name: lol;
-          animation-name: lol;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  animation-name: lol;
+  animation-duration: 4s;
 }
 
 .changeColorAnimation {
@@ -73,8 +52,7 @@
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-animation: move-bg 6s infinite linear;
-          animation: move-bg 6s infinite linear;
+  animation: move-bg 6s infinite linear;
 }
 
 .changeColorAnimation2 {
@@ -91,12 +69,11 @@
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-animation: move-bg 4s infinite linear;
-          animation: move-bg 4s infinite linear;
+  animation: move-bg 4s infinite linear;
 }
 
 /*
-! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -127,6 +104,7 @@
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
 */
 
 html {
@@ -141,6 +119,8 @@ html {
   /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
 }
 
 /*
@@ -507,54 +487,13 @@ video {
   height: auto;
 }
 
-*, ::before, ::after{
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
 }
 
-::-webkit-backdrop{
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -648,26 +587,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute{
-  position: absolute;
-}
-
-.relative{
-  position: relative;
-}
-
-.bottom-0{
-  bottom: 0px;
-}
-
-.left-\[25\%\]{
-  left: 25%;
-}
-
-.z-\[-10\]{
-  z-index: -10;
-}
-
 .m-10{
   margin: 2.5rem;
 }
@@ -682,51 +601,12 @@ video {
   margin-bottom: 10vh;
 }
 
-.my-5{
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
-.my-10{
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.my-\[5vh\]{
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
-
-.mb-\[150vh\]{
-  margin-bottom: 150vh;
-}
-
-.mb-\[5vh\]{
-  margin-bottom: 5vh;
-}
-
-.mb-\[7vh\]{
-  margin-bottom: 7vh;
-}
-
-.mt-\[5vh\]{
-  margin-top: 5vh;
-}
-
-.mt-\[8vh\]{
-  margin-top: 8vh;
-}
-
-.mb-\[3vh\]{
-  margin-bottom: 3vh;
-}
-
 .mb-\[10vh\]{
   margin-bottom: 10vh;
 }
 
-.mb-\[20vh\]{
-  margin-bottom: 20vh;
+.mb-\[5vh\]{
+  margin-bottom: 5vh;
 }
 
 .mb-\[50vh\]{
@@ -749,32 +629,16 @@ video {
   margin-bottom: 30vh;
 }
 
-.mb-\[200vh\]{
-  margin-bottom: 200vh;
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 
-.mb-\[300vh\]{
-  margin-bottom: 300vh;
+.mb-\[5vw\]{
+  margin-bottom: 5vw;
 }
 
-.mb-\[250vh\]{
-  margin-bottom: 250vh;
-}
-
-.mt-\[10vh\]{
-  margin-top: 10vh;
-}
-
-.mb-\[350vh\]{
-  margin-bottom: 350vh;
-}
-
-.mb-\[400vh\]{
-  margin-bottom: 400vh;
-}
-
-.mb-\[420vh\]{
-  margin-bottom: 420vh;
+.mb-\[5vj\]{
+  margin-bottom: 5vj;
 }
 
 .flex{
@@ -783,14 +647,6 @@ video {
 
 .hidden{
   display: none;
-}
-
-.h-\[100vh\]{
-  height: 100vh;
-}
-
-.h-auto{
-  height: auto;
 }
 
 .h-full{
@@ -810,17 +666,16 @@ video {
 }
 
 .w-fit{
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.w-10\/12{
-  width: 83.333333%;
-}
-
 .w-6\/12{
   width: 50%;
+}
+
+.w-10\/12{
+  width: 83.333333%;
 }
 
 .w-5\/12{
@@ -837,6 +692,14 @@ video {
 
 .w-8\/12{
   width: 66.666667%;
+}
+
+.w-\[500px\]{
+  width: 500px;
+}
+
+.w-3\/12{
+  width: 25%;
 }
 
 .min-w-\[300px\]{
@@ -873,10 +736,6 @@ video {
 
 .justify-center{
   justify-content: center;
-}
-
-.justify-between{
-  justify-content: space-between;
 }
 
 .justify-around{
@@ -931,11 +790,6 @@ video {
   padding: 1.25rem;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -965,28 +819,9 @@ video {
   font-family: Great Vibes, serif;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-\[8rem\]{
-  font-size: 8rem;
-}
-
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-\[10rem\]{
@@ -1003,21 +838,22 @@ video {
   line-height: 1;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-7xl{
   font-size: 4.5rem;
   line-height: 1;
 }
 
-.font-extrabold{
-  font-weight: 800;
-}
-
-.font-bold{
-  font-weight: 700;
-}
-
 .font-medium{
   font-weight: 500;
+}
+
+.font-extrabold{
+  font-weight: 800;
 }
 
 .font-extralight{
@@ -1028,12 +864,8 @@ video {
   font-weight: 900;
 }
 
-.leading-10{
-  line-height: 2.5rem;
-}
-
-.tracking-widest{
-  letter-spacing: 0.1em;
+.font-bold{
+  font-weight: 700;
 }
 
 .text-white{
@@ -1041,44 +873,13 @@ video {
   color: rgb(242 244 243 / var(--tw-text-opacity));
 }
 
-.text-\[\#b59818\]{
-  --tw-text-opacity: 1;
-  color: rgb(181 152 24 / var(--tw-text-opacity));
-}
-
-.text-lightbrown{
-  --tw-text-opacity: 1;
-  color: rgb(169 146 125 / var(--tw-text-opacity));
-}
-
-.opacity-50{
-  opacity: 0.5;
-}
-
-.duration-100{
-  transition-duration: 100ms;
-}
-
 .duration-150{
   transition-duration: 150ms;
-}
-
-.hover\:cursor-pointer:hover{
-  cursor: pointer;
 }
 
 .hover\:text-lightbrown:hover{
   --tw-text-opacity: 1;
   color: rgb(169 146 125 / var(--tw-text-opacity));
-}
-
-.hover\:underline:hover{
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
-.hover\:duration-500:hover{
-  transition-duration: 500ms;
 }
 
 @media (min-width: 640px){
@@ -1089,61 +890,8 @@ video {
 }
 
 @media (min-width: 1024px){
-  .laptop\:left-\[40\%\]{
-    left: 40%;
-  }
-
-  .laptop\:my-\[5vh\]{
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-
-  .laptop\:mb-\[130vh\]{
-    margin-bottom: 130vh;
-  }
-
-  .laptop\:mb-\[150vh\]{
-    margin-bottom: 150vh;
-  }
-
-  .laptop\:mb-\[200vh\]{
-    margin-bottom: 200vh;
-  }
-
-  .laptop\:mb-\[250vh\]{
-    margin-bottom: 250vh;
-  }
-
-  .laptop\:mb-\[350vh\]{
-    margin-bottom: 350vh;
-  }
-
-  .laptop\:mb-\[300vh\]{
-    margin-bottom: 300vh;
-  }
-
-  .laptop\:mb-\[400vh\]{
-    margin-bottom: 400vh;
-  }
-
-  .laptop\:mt-\[10vh\]{
-    margin-top: 10vh;
-  }
-
-  .laptop\:mb-\[10vh\]{
-    margin-bottom: 10vh;
-  }
-
-  .laptop\:mb-\[420vh\]{
-    margin-bottom: 420vh;
-  }
-
-  .laptop\:w-6\/12{
-    width: 50%;
-  }
-
-  .laptop\:w-8\/12{
-    width: 66.666667%;
+  .laptop\:w-3\/12{
+    width: 25%;
   }
 
   .laptop\:flex-row{
@@ -1156,10 +904,5 @@ video {
 
   .laptop\:justify-end{
     justify-content: flex-end;
-  }
-
-  .laptop\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
