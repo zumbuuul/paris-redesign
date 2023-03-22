@@ -7,6 +7,11 @@ module.exports = {
       pc: "1280px",
     },
     extend: {
+      backgroundImage: {
+        hero: "url('../images/basic.png')",
+        hero2: "url('../images/basic2.png')",
+        hero3: "url('../images/basic3.png')",
+      },
       colors: {
         black: "#0A0908",
         red: "#49111C",
