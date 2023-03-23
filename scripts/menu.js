@@ -1,13 +1,20 @@
 const openmenubutton = document.querySelectorAll("#open-menu");
-const modal = document.getElementById("modal-wrapper");
-const closemenubutton = document.getElementById("close-modal");
+const modal = document.querySelectorAll("#modal-wrapper");
+const closemenubutton = document.querySelectorAll("#close-modal");
+
+console.log(closemenubutton);
 
 openmenubutton.forEach((button) => {
+  console.log(button.dataset.num);
   button.addEventListener("click", () => {
-    modal.style.display = "flex";
+    modal[button.dataset.num - 1].style.display = "flex";
   });
 });
 
-closemenubutton.addEventListener("click", () => {
-  modal.style.display = "none";
+closemenubutton.forEach((button) => {
+  button.addEventListener("click", () => {
+    modal.forEach((modal) => {
+      modal.style.display = "none";
+    });
+  });
 });
