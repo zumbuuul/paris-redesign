@@ -35,6 +35,14 @@
   animation-duration: 4s;
 }
 
+.showModal {
+  display: block;
+}
+
+.hideModal {
+  display: none;
+}
+
 .changeColorAnimation {
   --bg-size: 400%;
   --color-one: #e3e84a;
