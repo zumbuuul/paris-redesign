@@ -684,6 +684,10 @@ video {
   margin-bottom: 30vh;
 }
 
+.mt-\[2vh\]{
+  margin-top: 2vh;
+}
+
 .block{
   display: block;
 }
@@ -706,6 +710,10 @@ video {
 
 .h-\[50vh\]{
   height: 50vh;
+}
+
+.max-h-\[calc\(100vh-210px\)\]{
+  max-height: calc(100vh - 210px);
 }
 
 .min-h-\[100vh\]{
@@ -751,6 +759,14 @@ video {
 
 .w-8\/12{
   width: 66.666667%;
+}
+
+.w-11\/12{
+  width: 91.666667%;
+}
+
+.w-\[95\%\]{
+  width: 95%;
 }
 
 .min-w-\[300px\]{
@@ -803,6 +819,10 @@ video {
 
 .gap-\[10vh\]{
   gap: 10vh;
+}
+
+.overflow-y-auto{
+  overflow-y: auto;
 }
 
 .scroll-smooth{
@@ -922,12 +942,56 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.px-\[1rem\]{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-\[2rem\]{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-\[5rem\]{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-\[10rem\]{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
 .pl-\[5vw\]{
   padding-left: 5vw;
 }
 
 .pb-\[10vh\]{
   padding-bottom: 10vh;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
+}
+
+.pt-\[3rem\]{
+  padding-top: 3rem;
 }
 
 .text-left{
@@ -995,6 +1059,28 @@ video {
   font-size: 3rem;
 }
 
+.text-\[4rem\]{
+  font-size: 4rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-\[3\.5rem\]{
+  font-size: 3.5rem;
+}
+
+.text-\[0\.6rem\]{
+  font-size: 0.6rem;
+}
+
 .font-medium{
   font-weight: 500;
 }
@@ -1022,6 +1108,10 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(242 244 243 / var(--tw-text-opacity));
+}
+
+.text-\[2re\2c \]{
+  color: 2re,;
 }
 
 .blur-sm{
@@ -1116,6 +1206,14 @@ video {
 }
 
 @media (min-width: 1024px){
+  .laptop\:mb-\[15vh\]{
+    margin-bottom: 15vh;
+  }
+
+  .laptop\:mt-\[10vh\]{
+    margin-top: 10vh;
+  }
+
   .laptop\:flex{
     display: flex;
   }
@@ -1128,6 +1226,10 @@ video {
     width: 20vw;
   }
 
+  .laptop\:w-6\/12{
+    width: 50%;
+  }
+
   .laptop\:flex-row{
     flex-direction: row;
   }
@@ -1138,5 +1240,19 @@ video {
 
   .laptop\:justify-end{
     justify-content: flex-end;
+  }
+
+  .laptop\:px-\[5rem\]{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .laptop\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .laptop\:text-\[5rem\]{
+    font-size: 5rem;
   }
 }
