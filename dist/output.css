@@ -2,12 +2,27 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
+@-webkit-keyframes lol {
+  0% {
+    transform: translateY(500px);
+  }
+
+  100% {
+  }
+}
+
 @keyframes lol {
   0% {
     transform: translateY(500px);
   }
 
   100% {
+  }
+}
+
+@-webkit-keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
   }
 }
 
@@ -24,18 +39,24 @@
 }
 
 .slowSlideup {
-  animation-name: lol;
-  animation-duration: 1s;
+  -webkit-animation-name: lol;
+          animation-name: lol;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .slowerSlideup {
-  animation-name: lol;
-  animation-duration: 2.5s;
+  -webkit-animation-name: lol;
+          animation-name: lol;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 
 .slowestSlideup {
-  animation-name: lol;
-  animation-duration: 4s;
+  -webkit-animation-name: lol;
+          animation-name: lol;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 .showModal {
@@ -60,7 +81,8 @@
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  animation: move-bg 6s infinite linear;
+  -webkit-animation: move-bg 6s infinite linear;
+          animation: move-bg 6s infinite linear;
 }
 
 .changeColorAnimation2 {
@@ -77,11 +99,12 @@
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  animation: move-bg 4s infinite linear;
+  -webkit-animation: move-bg 4s infinite linear;
+          animation: move-bg 4s infinite linear;
 }
 
 /*
-! tailwindcss v3.4.11 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -112,13 +135,9 @@
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
-5. Use the user's configured `sans` font-feature-settings by default.
-6. Use the user's configured `sans` font-variation-settings by default.
-7. Disable tap highlights on iOS
 */
 
-html,
-:host {
+html {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -128,14 +147,8 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
-  font-feature-settings: normal;
-  /* 5 */
-  font-variation-settings: normal;
-  /* 6 */
-  -webkit-tap-highlight-color: transparent;
-  /* 7 */
 }
 
 /*
@@ -207,10 +220,8 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font-family by default.
-2. Use the user's configured `mono` font-feature-settings by default.
-3. Use the user's configured `mono` font-variation-settings by default.
-4. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -219,12 +230,8 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-feature-settings: normal;
-  /* 2 */
-  font-variation-settings: normal;
-  /* 3 */
   font-size: 1em;
-  /* 4 */
+  /* 2 */
 }
 
 /*
@@ -283,17 +290,11 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
-  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
   /* 1 */
   line-height: inherit;
-  /* 1 */
-  letter-spacing: inherit;
   /* 1 */
   color: inherit;
   /* 1 */
@@ -318,9 +319,9 @@ select {
 */
 
 button,
-input:where([type='button']),
-input:where([type='reset']),
-input:where([type='submit']) {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -440,14 +441,6 @@ menu {
 }
 
 /*
-Reset default styling for dialogs.
-*/
-
-dialog {
-  padding: 0;
-}
-
-/*
 Prevent resizing textareas horizontally by default.
 */
 
@@ -522,12 +515,6 @@ video {
   height: auto;
 }
 
-/* Make elements with the HTML hidden attribute stay hidden by default */
-
-[hidden] {
-  display: none;
-}
-
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -542,9 +529,6 @@ video {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -576,10 +560,53 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-  --tw-contain-size:  ;
-  --tw-contain-layout:  ;
-  --tw-contain-paint:  ;
-  --tw-contain-style:  ;
+}
+
+::-webkit-backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
 }
 
 ::backdrop{
@@ -596,9 +623,6 @@ video {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -630,10 +654,6 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-  --tw-contain-size:  ;
-  --tw-contain-layout:  ;
-  --tw-contain-paint:  ;
-  --tw-contain-style:  ;
 }
 
 .fixed{
@@ -648,20 +668,20 @@ video {
   position: relative;
 }
 
-.left-0{
-  left: 0px;
-}
-
-.right-\[2rem\]{
-  right: 2rem;
-}
-
 .top-0{
   top: 0px;
 }
 
+.left-0{
+  left: 0px;
+}
+
 .top-\[-0rem\]{
   top: -0rem;
+}
+
+.right-\[2rem\]{
+  right: 2rem;
 }
 
 .z-10{
@@ -681,44 +701,44 @@ video {
   margin-bottom: 10vh;
 }
 
-.mb-\[30vh\]{
-  margin-bottom: 30vh;
+.mb-\[5vh\]{
+  margin-bottom: 5vh;
 }
 
 .mb-\[50vh\]{
   margin-bottom: 50vh;
 }
 
-.mb-\[5vh\]{
-  margin-bottom: 5vh;
-}
-
-.mt-5{
-  margin-top: 1.25rem;
-}
-
-.mt-\[1rem\]{
-  margin-top: 1rem;
+.mt-\[30vh\]{
+  margin-top: 30vh;
 }
 
 .mt-\[20vh\]{
   margin-top: 20vh;
 }
 
-.mt-\[2rem\]{
-  margin-top: 2rem;
-}
-
 .mt-\[2vh\]{
   margin-top: 2vh;
 }
 
-.mt-\[30vh\]{
-  margin-top: 30vh;
-}
-
 .mt-\[5vh\]{
   margin-top: 5vh;
+}
+
+.mt-\[1rem\]{
+  margin-top: 1rem;
+}
+
+.mt-\[2rem\]{
+  margin-top: 2rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.mb-\[30vh\]{
+  margin-bottom: 30vh;
 }
 
 .block{
@@ -733,6 +753,10 @@ video {
   display: none;
 }
 
+.h-full{
+  height: 100%;
+}
+
 .h-\[100vh\]{
   height: 100vh;
 }
@@ -741,36 +765,26 @@ video {
   height: 50vh;
 }
 
-.h-full{
-  height: 100%;
-}
-
 .min-h-\[100vh\]{
   min-height: 100vh;
 }
 
-.w-1\/12{
-  width: 8.333333%;
+.w-full{
+  width: 100%;
 }
 
-.w-10\/12{
-  width: 83.333333%;
-}
-
-.w-4\/12{
-  width: 33.333333%;
-}
-
-.w-5\/12{
-  width: 41.666667%;
+.w-fit{
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-6\/12{
   width: 50%;
 }
 
-.w-8\/12{
-  width: 66.666667%;
+.w-10\/12{
+  width: 83.333333%;
 }
 
 .w-\[100vw\]{
@@ -781,13 +795,20 @@ video {
   width: 95%;
 }
 
-.w-fit{
-  width: -moz-fit-content;
-  width: fit-content;
+.w-5\/12{
+  width: 41.666667%;
 }
 
-.w-full{
-  width: 100%;
+.w-4\/12{
+  width: 33.333333%;
+}
+
+.w-1\/12{
+  width: 8.333333%;
+}
+
+.w-8\/12{
+  width: 66.666667%;
 }
 
 .min-w-\[300px\]{
@@ -858,10 +879,6 @@ video {
   border-radius: 9999px;
 }
 
-.border{
-  border-width: 1px;
-}
-
 .border-2{
   border-width: 2px;
 }
@@ -870,8 +887,17 @@ video {
   border-width: 1px;
 }
 
+.border{
+  border-width: 1px;
+}
+
 .border-b-2{
   border-bottom-width: 2px;
+}
+
+.border-yellow-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(202 138 4 / var(--tw-border-opacity));
 }
 
 .border-white{
@@ -879,9 +905,8 @@ video {
   border-color: rgb(242 244 243 / var(--tw-border-opacity));
 }
 
-.border-yellow-600{
-  --tw-border-opacity: 1;
-  border-color: rgb(202 138 4 / var(--tw-border-opacity));
+.bg-white\/30{
+  background-color: rgb(242 244 243 / 0.3);
 }
 
 .bg-gradientMid{
@@ -892,10 +917,6 @@ video {
 .bg-lightbrown{
   --tw-bg-opacity: 1;
   background-color: rgb(169 146 125 / var(--tw-bg-opacity));
-}
-
-.bg-white\/30{
-  background-color: rgb(242 244 243 / 0.3);
 }
 
 .bg-gradient-to-r{
@@ -915,18 +936,18 @@ video {
 }
 
 .from-black{
-  --tw-gradient-from: #0A0908 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(10 9 8 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #0A0908;
+  --tw-gradient-to: rgb(10 9 8 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .via-\[\#111111\]{
-  --tw-gradient-to: rgb(17 17 17 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #111111 var(--tw-gradient-via-position), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(17 17 17 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #111111, var(--tw-gradient-to);
 }
 
 .to-\[\#242424\]{
-  --tw-gradient-to: #242424 var(--tw-gradient-to-position);
+  --tw-gradient-to: #242424;
 }
 
 .bg-cover{
@@ -955,20 +976,20 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.pb-4{
-  padding-bottom: 1rem;
-}
-
-.pb-\[10vh\]{
-  padding-bottom: 10vh;
-}
-
 .pl-\[5vw\]{
   padding-left: 5vw;
 }
 
 .pt-\[3rem\]{
   padding-top: 3rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
+.pb-\[10vh\]{
+  padding-bottom: 10vh;
 }
 
 .text-left{
@@ -987,14 +1008,18 @@ video {
   font-family: Great Vibes, serif;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-\[10rem\]{
+  font-size: 10rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-5xl{
@@ -1002,33 +1027,14 @@ video {
   line-height: 1;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-7xl{
   font-size: 4.5rem;
   line-height: 1;
-}
-
-.text-\[10rem\]{
-  font-size: 10rem;
-}
-
-.text-\[2\.5rem\]{
-  font-size: 2.5rem;
-}
-
-.text-\[2rem\]{
-  font-size: 2rem;
-}
-
-.text-\[3\.5rem\]{
-  font-size: 3.5rem;
-}
-
-.text-\[3rem\]{
-  font-size: 3rem;
-}
-
-.text-\[4rem\]{
-  font-size: 4rem;
 }
 
 .text-sm{
@@ -1036,33 +1042,48 @@ video {
   line-height: 1.25rem;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.text-\[3rem\]{
+  font-size: 3rem;
 }
 
-.font-black{
-  font-weight: 900;
+.text-\[3\.5rem\]{
+  font-size: 3.5rem;
 }
 
-.font-extrabold{
-  font-weight: 800;
+.text-\[2rem\]{
+  font-size: 2rem;
 }
 
-.font-extralight{
-  font-weight: 200;
+.text-\[2\.5rem\]{
+  font-size: 2.5rem;
+}
+
+.text-\[4rem\]{
+  font-size: 4rem;
 }
 
 .font-medium{
   font-weight: 500;
 }
 
-.font-semibold{
-  font-weight: 600;
+.font-extrabold{
+  font-weight: 800;
 }
 
 .font-thin{
   font-weight: 100;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.font-extralight{
+  font-weight: 200;
+}
+
+.font-black{
+  font-weight: 900;
 }
 
 .italic{
@@ -1075,20 +1096,20 @@ video {
 }
 
 .blur-none{
-  --tw-blur:  ;
+  --tw-blur: blur(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.duration-150{
-  transition-duration: 150ms;
+.duration-300{
+  transition-duration: 300ms;
 }
 
 .duration-200{
   transition-duration: 200ms;
 }
 
-.duration-300{
-  transition-duration: 300ms;
+.duration-150{
+  transition-duration: 150ms;
 }
 
 .hover\:cursor-default:hover{
@@ -1138,16 +1159,16 @@ video {
     height: 50vh;
   }
 
+  .laptop\:w-5\/12{
+    width: 41.666667%;
+  }
+
   .laptop\:w-6\/12{
     width: 50%;
   }
 
   .laptop\:w-\[20vw\]{
     width: 20vw;
-  }
-
-  .laptop\:w-5\/12{
-    width: 41.666667%;
   }
 
   .laptop\:flex-row{
@@ -1167,12 +1188,12 @@ video {
     padding-right: 5rem;
   }
 
-  .laptop\:text-\[5rem\]{
-    font-size: 5rem;
-  }
-
   .laptop\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .laptop\:text-\[5rem\]{
+    font-size: 5rem;
   }
 }
