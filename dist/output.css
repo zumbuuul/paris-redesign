@@ -692,29 +692,31 @@ video {
   margin: 2.5rem;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mx-10{
   margin-left: 2.5rem;
   margin-right: 2.5rem;
 }
 
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.my-\[3rem\]{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
 .my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-\[15rem\]{
+  margin-bottom: 15rem;
+}
+
+.mb-\[5rem\]{
+  margin-bottom: 5rem;
+}
+
+.mt-\[5rem\]{
+  margin-top: 5rem;
 }
 
 .mb-\[10vh\]{
@@ -765,10 +767,6 @@ video {
   margin-top: 10rem;
 }
 
-.mt-\[5rem\]{
-  margin-top: 5rem;
-}
-
 .mt-\[3rem\]{
   margin-top: 3rem;
 }
@@ -779,14 +777,6 @@ video {
 
 .mb-5{
   margin-bottom: 1.25rem;
-}
-
-.mb-\[5rem\]{
-  margin-bottom: 5rem;
-}
-
-.mt-\[rem\]{
-  margin-top: rem;
 }
 
 .block{
@@ -825,18 +815,18 @@ video {
   width: 100%;
 }
 
-.w-fit{
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .w-6\/12{
   width: 50%;
 }
 
 .w-10\/12{
   width: 83.333333%;
+}
+
+.w-fit{
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-\[100vw\]{
@@ -869,6 +859,14 @@ video {
 
 .max-w-full{
   max-width: 100%;
+}
+
+.grow{
+  flex-grow: 1;
+}
+
+.basis-\[100\%\]{
+  flex-basis: 100%;
 }
 
 .transform{
@@ -1060,23 +1058,23 @@ video {
   font-family: Great Vibes, serif;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.text-\[10rem\]{
-  font-size: 10rem;
+.text-\[5rem\]{
+  font-size: 5rem;
 }
 
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-xl{
@@ -1119,8 +1117,13 @@ video {
   line-height: 1;
 }
 
-.text-\[5rem\]{
-  font-size: 5rem;
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-bold{
+  font-weight: 700;
 }
 
 .font-medium{
@@ -1145,10 +1148,6 @@ video {
 
 .font-black{
   font-weight: 900;
-}
-
-.font-bold{
-  font-weight: 700;
 }
 
 .italic{
